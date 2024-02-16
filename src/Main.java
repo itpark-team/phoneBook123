@@ -34,7 +34,7 @@ public class Main {
                 break;
                 case 3: {
                     String model = ConsoleUtil.inputString("Введите модель телефона: ", 3, 20);
-                    String color = PhoneColors.getColorByNumber(ConsoleUtil.inputInt("Введите ноимер цвета (1,2,3): ", 3, 20));
+                    String color = PhoneColors.getColorByNumber(ConsoleUtil.inputInt("Введите ноимер цвета (1-Красный,2-Жёлтный,3-Космически-Серый): ", 3, 20));
                     int price = ConsoleUtil.inputInt("Введите цену телефона: ", 1, 1000000);
                     int balance = ConsoleUtil.inputInt("Введите кол-во телефонов на складе: ", 0, 100);
 
