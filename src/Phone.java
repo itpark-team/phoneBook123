@@ -57,7 +57,10 @@ public class Phone {
         this.price = price;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(int balance) throws Exception {
+        if (balance < 0 || balance > 100) {
+            throw new Exception("Ошибка. Кол-во телефонов на складе должно быть от 0 до 100.");
+        }
         this.balance = balance;
     }
 }
